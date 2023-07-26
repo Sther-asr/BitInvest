@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+img[alt="w-icon"]{ width: 10em;}
+img[alt="v-icon"]{
+    height: 4em;
+    margin-bottom: 1em;
+}
+
+/* BARRA DE NAVEGACIÓN -------------- BARRA DE NAVEGACIÓN  */
+nav{
+    background-color: #0B1E34;
+    width: 100vw;
+    height: 4.5em;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4.5em;
+    height: 100%;
+}
+.logo{
+    width: 20%;
+    height: 80%;
+    /* border: 1px solid gold; */
+}
+.logo img{ height: 100%;}
+.lista{ display: flex;}
+.li-nav{ list-style: none;}
+.a-nav{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 110%;
+    display: block;
+    transition: letter-spacing .5s;
+    margin: 0 1.5em;
+    /* border: 1px solid green; */
+}
+.checkbtn{
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+/* HEADER ------------------ HEADER--------------- HEADER */
+.home{
+    background-image: linear-gradient(rgba(11, 30, 52, 0.7),rgba(11, 30, 52, 0.7)),
+    url(img/executium-5FLR5KAucEU-unsplash.jpg);;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    overflow: hidden;
+    height: calc(100vh - 4.5em);
+}
+.home-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    margin-top:4.5em;
+    /* border: 1px solid red; */
+}
+.home .titulo{
+    /* border: 1px solid green; */
+    font-size: 400%;
+    margin-bottom: 0.5em;
+}
+.home .frase{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200%;
+}
+
+
+
+
+/* ¿QUÉ ES LA CRIPTOMONEDA?------------ ¿QUÉ ES LA CRIPTOMONEDA? */
+.whatis{
+    height: 45vh;
+    margin: 4.5em 0;
+    overflow: hidden;
+}
+.whatis-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.whatis-img{width: 35%; /* border: 1px solid green;height: 100%; */}
+
+.whatis-img img{ width: 100%; height: 20em;}
+
+.whatis-info{ padding: 0 1em; width: 50%; /* border: 1px solid purple; */}
+
+.w-head{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+
+.w-tittle{
+    text-transform: uppercase;
+    font-size: 200%;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+.w-phrase{ font-size: 120%; line-height: 30px;}
+
+
+
+
+/* ¿POR QUÉ ESCOGER CRIPTOMONEDAS? ---------------- ¿POR QUÉ ESCOGER CRIPTOMONEDAS? */
+.ventajas{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4.5em;
+}
+.v-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+}
+.v-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.v-head h2{ text-align: center;}
+.v-item{
+    width: 46%;
+    /* border: 1px solid purple; */
+    text-align: center;
+    margin: 1em;
+    padding: 2em;
+    background-color: #e4e2e2e7;
+}
+.v-item h3{
+    text-transform: uppercase;
+    font-size: 125%;
+    font-weight: 600;
+    margin-bottom: 0.8em;
+}
+.v-item p{
+    /* line-height: 30px; */
+    font-size: 120%;
+}
+
+
+
+/*¿CÓMO FUNCIONA LA CRIPTOMONEDA? ----------- ¿CÓMO FUNCIONA LA CRIPTOMONEDA?  */
+.howworks{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4.5em;
+    text-align: center;
+}
+.h-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    /* border: 1px solid purple; */
+    width: 70%;
+}
+.h-head img{margin-bottom: 2em;}
+.h-head p{
+    font-size: 120%;
+    line-height: 30px;
+}
+.h-section{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+
+}
+.h-item{
+    width: 31%;
+    /* border: 1px solid purple; */
+    text-align: center;
+    margin: 0.5em;
+    padding: 2em 2em;
+    background-color: #e4e2e2e7;
+}
+.h-item h3{
+    margin-bottom: 0.8em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 125%;
+}
+.h-item p{
+    font-size: 110%;
+}
+.h-two{background-color: #0B1E34; color: white;}
+
+
+
+
+/*SECCIÓN DE NOTICIAS ----------------- SECCIÓN DE NOTICIAS  */
+.noticias{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4.5em;
+    text-align: center;
+}
+.n-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.n-head h3{ margin-bottom: 0.5em;}
+.n-head img{width: 5em;}
+.n-section{display: flex; justify-content: center;
+    /* border: 1px solid purple; */
+}
+.n-item{
+    width: 27%;
+    margin: 0 0.5em;
+    /* border: 1px solid green; */
+}
+.n-item a{text-decoration: none; color: #0B1E34;}
+.n-item a:hover{
+    color:rgba(11, 30, 52, 0.7);
+}
+.n-image{
+    height: 57%;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    margin-bottom: 0.5em;
+}
+.n-image img{ max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/*FOOTER ------------- FOOTER -------------- FOOTER  */
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: flex-end;
+    align-items: center;
+    height: 36vh;
+    background-color: #0B1E34;
+}
+.footer-copyright{
+    background-color: #F5A201;
+    padding: 1em;
+    width: 100%;
+    color: #0B1E34;
+    text-align: center;
+    font-size: 120%;
+    font-weight: 600;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 4.5em;
+}
+.info-redes{ padding-bottom: 2em;}
+.info-redes,.info-logo,.info-info{ width: 30%;
+    /* padding-top: 3em; */
+}
+.info-redes p{color: white; font-size: 160%; font-weight: 600;}
+.info-redes img{height: 1.5em;}
+.info-redes-1,.info-redes-2{margin-bottom: 1em;}
+.info-redes-item{margin: 0 5px;}
+
+.info-logo{width: 20%; height: 60%; 
+    /* padding-top: 2em; */
+}
+
+.info-info img{height: 1.5em;}
+.info-item{width: 100%;display: flex;justify-content: space-between; margin-top: 1.5em;}
+.info-item p{color: white; font-size: 120%; font-weight: 500; text-align: left; width: 80%;}
+.info-item img[alt="place-info"]{height: 2em;}
+
+/* MEDIA QUERYS --------------- MEDIA QUERYS */
+@media screen and (min-width:1200px) {
+    .n-image{height: 71%;}
+}
+@media screen and (min-width:1441px) {
+    .v-item{ width: 30%;}
+}
+@media screen and (min-width:1600px) {
+    .n-image{height: 80%;}
+}
+@media screen and (max-width:858px){
+    /* MENÚ-----------MENÚ */
+    .checkbtn{
+        display: block;
+    }
+    .lista{
+        flex-direction: column;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(255, 255, 255);
+        top: 4.5em;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        padding-top: 5em;
+    }
+    .li-nav{
+        display: block;
+        margin: 2em 0;
+        line-height: 20px;
+    }
+    .a-nav{
+        font-size: 150%;
+        color: #0B1E34;
+    }
+    .a-nav:hover{
+        color: #354b64f8;
+    }
+    #check:checked ~ .lista{
+        left: 0;
+    }
+    /* TITULO DEL HEADER---------TITULO DEL HEADER */
+    .home .titulo{
+        font-size: 350%;
+    }
+    .home .frase{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 150%;
+    }
+    .home-titulo{
+        /* border: 1px solid green; */
+        padding: 0 4em;
+    }
+    /* WHATIS-------------WHATIS */
+    .whatis{height: 70vh;}
+    .whatis-div{ flex-direction: column; align-items: center;
+        /* border: 1px solid purple; */
+    }
+    .whatis-img{ height: 40%; 
+        /* border: 1px solid green; */
+    }
+    .whatis-img img{ max-width: 100%; height: 100%;}
+    .whatis-info{
+        padding: 0 4em;
+        width: 100%;
+        height: 60%;
+        margin-top: 1em;
+        /* border: 1px solid green; */
+    }
+    .w-head{ align-items: center;}
+    .w-tittle{margin-bottom: 0.5em;}
+    .w-phrase{text-align: justify;}
+
+    /* VENTAJAS--------------VENTAJAS */
+    .v-item{
+        width: 100%;
+        margin: 1em 0;
+    }
+    /* HOW WORKS------HOW WORKS */
+    .h-head p{text-align: justify;}
+    .h-section{flex-wrap: wrap;}
+    .h-item{
+        width: 100%;
+        margin: 0.5em 0;
+        padding: 1.5em;
+    }
+    /* NOTICIAS--------NOTICIAS */
+    .n-section{ flex-wrap: wrap;}
+    .n-item{
+        width: 70%;
+        height: fit-content;
+        margin: 1em 0;
+    }
+    .n-image{ margin-bottom: 0.5em;}
+
+    /* FOOTER */
+    .footer{height: 40vh;}
+    .footer-info{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0 4.5em;
+    }
+    .info-redes,.info-logo,.info-info{ width: 100%;}
+    .info-redes-1{display: none;}
+    .info-redes{ padding: 0em 0 0;}
+    .info-logo{height: 30%;}
+    .info-info{display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* border: 1px solid yellow; */
+    }
+    .info-item{width: 45%;display: flex; justify-content: space-between; margin: 0 0 0.5;
+        /* border: 1px solid red; */
+    }
+    .info-item p{ font-size: 110%; text-align: left; width: 70%;}
+    .place{width: 90%;}
+    .place p{ width: 85%;}
+}
+@media screen and (max-width: 570px){
+    
+    .home .frase{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 120%;
+    }
+}
+@media screen and (max-width:320px){
+    .logo{
+        display: none;
+    }
+    .home .titulo{
+        font-size: 150%;
+    }
+}
